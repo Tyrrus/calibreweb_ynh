@@ -1,9 +1,9 @@
 --- a/cps/web.py	2019-01-27 08:32:26.000000000 +0100
 +++ b/cps/web.py	2019-02-02 12:38:12.364323004 +0100
-@@ -78,6 +78,9 @@
- import server
- from reverseproxy import ReverseProxied
- from updater import updater_thread
+@@ -79,6 +79,9 @@
+from updater import updater_thread
+import hashlib
+import unidecode
 +#Yunohost LDAP integration - 1
 +vlogout = 0
 +#END Yunohost LDAP integration -1

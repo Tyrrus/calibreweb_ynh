@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PKG_DEPENDENCIES="sqlite3 python-pip imagemagick"
+PKG_DEPENDENCIES="sqlite3 python-pip imagemagick libldap2-dev"
 DOSSIER_MEDIA=/home/yunohost.multimedia
 create_dir=0
 

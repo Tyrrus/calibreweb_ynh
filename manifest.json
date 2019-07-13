@@ -3,10 +3,10 @@
     "id": "calibreweb",
     "packaging_format": 1,
     "description": {
-        "en": "Calibre-web for Yunohost",
-        "fr": "Calibre-web pour Yunohost"
+        "en": "Clean interface for browsing, reading and downloading eBooks",
+        "fr": "Interface simplifié pour parcourir, lire et charger des eBooks"
     },
-    "version": "0.96.0~ynh3",
+    "version": "0.96.2~ynh5",
     "url": "https://github.com/janeczku/calibre-web",
     "license": "free",
     "maintainer": {
@@ -65,6 +65,7 @@
             },
             {
                 "name": "language",
+                "type": "string",
                 "optional": true,
                 "ask": {
                     "en": "Select a default language",

@@ -1,16 +1,16 @@
---- a/cps/web.py	2019-01-27 08:32:26.000000000 +0100
-+++ b/cps/web.py	2019-02-02 12:38:12.364323004 +0100
-@@ -78,6 +78,9 @@
- import server
- from reverseproxy import ReverseProxied
+--- a/cps/web.py	2019-05-25 23:55:32.798462354 +0200
++++ b/cps/web.py	2019-05-26 00:02:06.002508666 +0200
+@@ -79,6 +79,9 @@
  from updater import updater_thread
+ import hashlib
+ import unidecode
 +#Yunohost LDAP integration - 1
 +vlogout = 0
 +#END Yunohost LDAP integration -1
  
  try:
      from googleapiclient.errors import HttpError
-@@ -2256,10 +2259,36 @@
+@@ -2288,10 +2291,36 @@
          return redirect(url_for('basic_configuration'))
      if current_user is not None and current_user.is_authenticated:
          return redirect(url_for('index'))
@@ -48,7 +48,7 @@
              login_user(user, remember=True)
              flash(_(u"you are now logged in as: '%(nickname)s'", nickname=user.nickname), category="success")
              return redirect_back(url_for("index"))
-@@ -2280,6 +2309,10 @@
+@@ -2312,6 +2341,10 @@
  @login_required
  def logout():
      if current_user is not None and current_user.is_authenticated:
@@ -59,7 +59,7 @@
          logout_user()
      return redirect(url_for('login'))
  
-@@ -2987,6 +3020,23 @@
+@@ -3024,6 +3057,23 @@
          if "config_ebookconverter" in to_save:
              content.config_ebookconverter = int(to_save["config_ebookconverter"])
  

@@ -6,7 +6,7 @@
         "en": "Clean interface for browsing, reading and downloading eBooks",
         "fr": "Interface simplifié pour parcourir, lire et charger des eBooks"
     },
-    "version": "0.96.2~ynh6",
+    "version": "0.96.4~ynh1",
     "url": "https://github.com/janeczku/calibre-web",
     "license": "free",
     "maintainer": {

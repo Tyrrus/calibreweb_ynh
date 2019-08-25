@@ -1,0 +1,5 @@
+--- a/cps/templates/layout.html	2019-08-25 10:15:55.615940498 +0100
++++ b/cps/templates/admin.html	2019-08-25 10:22:29.171461028 +0100
+@@ +59,7 @@
++      <li><a href="https://tyrrus.ddns.net/cops/"><span class="glyphicon glyphicon-book"></span><span class="hidden-sm">Liseuse</span></a></li>
+
